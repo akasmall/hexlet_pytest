@@ -11,3 +11,4 @@ setup.cfg
 backup/
 .pylintrc
 module_2/
+hexlet_pytest.code-workspace
