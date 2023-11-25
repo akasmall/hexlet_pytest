@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreMissingGitWarning": true,
+		"workbench.statusBar.visible": true,
+		"terminal.integrated.fontSize": 14
+	}
+}
