@@ -1,3 +1,2 @@
 ### Hexlet python tests and linter status:
 [![Actions Status](https://github.com/akasmall/hexlet_pytest/actions/workflows/hello-world.yml/badge.svg)](https://github.com/akasmall/hexlet_pytest/actions) <a href="https://codeclimate.com/github/akasmall/hexlet_pytest/maintainability"><img src="https://api.codeclimate.com/v1/badges/a83c753bdcdabd8080cb/maintainability" /></a> <a href="https://codeclimate.com/github/akasmall/hexlet_pytest/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a83c753bdcdabd8080cb/test_coverage" /></a>
-https://github.com/akasmall/hexlet_pytest/actions/workflows/hello-world.yml/badge.svg
