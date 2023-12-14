@@ -1,7 +1,7 @@
-from src.m2_p6_lesson_03 import module_test
+from src.m2_p6_lesson_03 import generate
 
 
-def test_module_test():
+def test_generate():
     expected = {
         'name': 'python-package',
         'meta': {'hidden': True},
@@ -10,6 +10,7 @@ def test_module_test():
             {'name': 'Makefile', 'meta': {}, 'type': 'file'},
             {'name': 'README.md', 'meta': {}, 'type': 'file'},
             {'name': 'dist', 'meta': {}, 'type': 'directory', 'children': []},
+            {'name': 'pyproject.toml', 'meta': {}, 'type': 'file'},
             {
                 'name': 'tests',
                 'meta': {},
@@ -17,7 +18,6 @@ def test_module_test():
                 'children':
                     [{'name': 'test_solution.py', 'meta': {}, 'type': 'file'}],
             },
-            {'name': 'pyproject.toml', 'meta': {}, 'type': 'file'},
             {
                 'name': '.venv',
                 'meta': {'owner': 'root', 'hidden': False},
@@ -38,11 +38,11 @@ def test_module_test():
                                 'name': 'hexlet-python-package.egg-link',
                                 'meta': {},
                                 'type': 'file',
-                            }],
-                        }],
-                    }],
-                }],
-            },
-        ],
+                            }]
+                        }]
+                    }]
+                }]
+            }
+        ]
     }
-    assert module_test() == expected
+    assert generate() == expected

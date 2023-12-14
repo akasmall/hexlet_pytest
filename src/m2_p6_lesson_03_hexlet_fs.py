@@ -19,9 +19,9 @@ def mkdir(name, children=[], meta={}):
     """Return directory node."""
     return {
         'name': name,
-        'children': children,
         'meta': meta,
         'type': 'directory',
+        'children': children,
     }
 
 
