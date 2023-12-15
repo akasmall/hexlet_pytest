@@ -32,12 +32,12 @@ def generate():
     tree_root.append(mkfile('Makefile'))
     tree_root.append(mkfile('README.md'))
     tree_root.append(mkdir('dist', []))
-    tree_root.append(mkfile('pyproject.toml'))
     tree_root.append(mkdir('tests', []))
+    tree_root.append(mkfile('pyproject.toml'))
+    _ = create_nested_df(tree_root, 'tests', 'file', 'test_solution.py')
     tree_root.append(mkdir('.venv', [],
                                    {'owner': 'root', 'hidden': False}))
 
-    _ = create_nested_df(tree_root, 'tests', 'file', 'test_solution.py')
     tree_subroot = create_nested_df(tree_root, '.venv', 'directory', 'lib')
     tree_subroot = create_nested_df(tree_subroot, 'lib',
                                     'directory', 'python3.6')
@@ -50,3 +50,34 @@ def generate():
 
 # print(generate())
 # print()
+
+# BEGIN
+#  решение учителя
+# def generate():
+#     return mkdir(
+#         'python-package',
+#         [
+#             mkfile('Makefile'),
+#             mkfile('README.md'),
+#             mkdir('dist'),
+#             mkdir('tests', [
+#                 mkfile('test_solution.py'),
+#             ]),
+#             mkfile('pyproject.toml'),
+#             mkdir(
+#                 '.venv',
+#                 [
+#                     mkdir('lib', [
+#                         mkdir('python3.6', [
+#                             mkdir('site-packages', [
+#                                 mkfile('hexlet-python-package.egg-link'),
+#                             ]),
+#                         ]),
+#                     ]),
+#                 ],
+#                 {'owner': 'root', 'hidden': False},
+#             ),
+#         ],
+#         {'hidden': True},
+#     )
+# END
