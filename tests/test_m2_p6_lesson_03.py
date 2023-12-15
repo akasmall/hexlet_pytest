@@ -10,7 +10,6 @@ def test_generate():
             {'name': 'Makefile', 'meta': {}, 'type': 'file'},
             {'name': 'README.md', 'meta': {}, 'type': 'file'},
             {'name': 'dist', 'meta': {}, 'type': 'directory', 'children': []},
-            {'name': 'pyproject.toml', 'meta': {}, 'type': 'file'},
             {
                 'name': 'tests',
                 'meta': {},
@@ -18,6 +17,7 @@ def test_generate():
                 'children':
                     [{'name': 'test_solution.py', 'meta': {}, 'type': 'file'}],
             },
+            {'name': 'pyproject.toml', 'meta': {}, 'type': 'file'},
             {
                 'name': '.venv',
                 'meta': {'owner': 'root', 'hidden': False},
