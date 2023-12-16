@@ -10,7 +10,7 @@ from hexlet_fs import is_file, mkdir, mkfile
 
 def compress_images(noda):
     # для линтера ))
-    plug = mkdir('plug',[mkfile('plug.plug')])
+    _ = mkdir('plug',[mkfile('plug.plug')])
     #  основной код
     new_noda = copy.deepcopy(noda)
     children = get_children(new_noda)
