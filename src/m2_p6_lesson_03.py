@@ -12,8 +12,10 @@
 #                 └── hexlet-python-package.egg-link  # Файл
 
 # import itertools
-from m2_p6_lesson_03_hexlet_fs import mkdir, mkfile
+from src.hexlet_fs import mkdir, mkfile
 
+# по решению учителя надо тупо по порядку сделать словарь с вложенными
+# списками дочерних директорий в виде словарей и дочерними словарями файлов
 
 # BEGIN (write your solution here)
 def create_nested_df(noda, dir_, type_children, name_target):
