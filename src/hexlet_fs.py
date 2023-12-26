@@ -63,5 +63,3 @@ def flatten(tree):
     walk(tree)
 
     return result
-
-
