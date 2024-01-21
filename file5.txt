@@ -1,4 +1,0 @@
-Hello from Hexlet
-Python is a snake
-Javascript is a language
-Use context managers

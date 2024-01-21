@@ -1,4 +1,0 @@
-Hello from Hexlet
-Python is awesome
-Javascript is not about coffee
-Use context managers

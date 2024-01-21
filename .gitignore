@@ -10,5 +10,5 @@ coverage.xml
 setup.cfg
 backup/
 .pylintrc
-module_2/
+module_*/
 hexlet_pytest.code-workspace
